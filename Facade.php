@@ -2,6 +2,10 @@
 
 namespace Facade;
 
+/**
+ * Class Facade
+ * @package Facade
+ */
 class Facade
 {
     /**
@@ -24,6 +28,9 @@ class Facade
         $this->os = $os;
     }
 
+    /**
+     * Turn on system logic.
+     */
     public function turnOn()
     {
         $this->bios->execute();
@@ -31,6 +38,9 @@ class Facade
         $this->bios->launch($this->os);
     }
 
+    /**
+     * Turn off system logic.
+     */
     public function turnOff()
     {
         $this->os->halt();
